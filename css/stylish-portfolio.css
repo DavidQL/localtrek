@@ -42,6 +42,8 @@ body {
 .person-callout {
     float:left;
     width:55%;
+    background: whitesmoke;
+    padding: 30px;
 }
 .person-callout img {
     float:left;
@@ -55,6 +57,7 @@ body {
 }
 .person-callout:nth-child(even) {
     float:right;
+    margin-top:30px;
 }
 .person-callout:nth-child(even) img {
     float:right;
