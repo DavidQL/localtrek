@@ -91,6 +91,10 @@ body {
 .coming-soon a {
     width:220px;
 }
+
+input.email {
+    color:black;
+}
 /* Custom Button Styles */
 
 .btn-dark {
