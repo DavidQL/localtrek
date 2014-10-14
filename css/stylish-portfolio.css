@@ -75,6 +75,13 @@ body {
 #desktop-or-mobile ul {
     text-align:left;
 }
+#desktop-or-mobile h2 {
+    font-size:40px;
+}
+#desktop-or-mobile li {
+    font-size: 20px;
+    margin: 10px 0;
+}
 
 .coming-soon h3 {
     font-size:65px;
