@@ -32,6 +32,12 @@ body {
     font-family: 'Dosis', sans-serif;
     color:white;
 }
+@media (max-width: 500px) {
+  .text-vertical-center h1 {
+    font-size:90px;
+  }
+}
+
 .text-vertical-center h3 {
     color:white;
     font-size:30px;
@@ -41,10 +47,15 @@ body {
 }
 .person-callout {
     float:left;
-    width:55%;
     background: whitesmoke;
     padding: 30px;
 }
+@media (min-width: 500px) {
+  .person-callout {
+    width:55%;
+  }
+}
+
 .person-callout img {
     float:left;
     border-radius:100px;
@@ -74,6 +85,11 @@ body {
 }
 #desktop-or-mobile ul {
     text-align:left;
+}
+@media (max-width: 500px) {
+  #desktop-or-mobile ul {
+    padding:0;
+  }
 }
 #desktop-or-mobile h2 {
     font-size:40px;
