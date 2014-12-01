@@ -18,10 +18,8 @@ $(function() {
             }
         }
     });
-
-    if (window.location.href.indexOf('github') >= 0) {
-        $('.try-it iframe').attr('src', '/localtrek/path-create.html');
-    }
-    
   });
+  if (window.location.href.indexOf('github') >= 0) {
+    $('.try-it iframe').attr('src', '/localtrek/path-create.html');
+  }
 });
