@@ -1,6 +1,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <link href="css/path-create.css" rel="stylesheet">
 	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 
@@ -16,7 +17,7 @@
 		$(document).ready(function(){
 
 			// Set up the basic map
-			var map = L.map('map').setView([51.505, -0.09], 13);
+			var map = L.map('map').setView([40.014986, -105.270546], 13);
 
 			L.tileLayer('http://{s}.tiles.mapbox.com/v3/oddityoverseer13.kalffo8a/{z}/{x}/{y}.png', {
 			    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -43,7 +44,7 @@
 			        layer = e.layer;
 
 			    if (type === 'marker') {
-			        layer.bindPopup('A popup!');
+			        layer.bindPopup(prompt("Enter marker title"));
 			    }
 
 			    drawnItems.addLayer(layer);

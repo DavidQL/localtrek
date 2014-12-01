@@ -326,3 +326,15 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+.try-it h2 {
+    text-align: center;
+}
+
+.try-it iframe {
+    width: 50%;
+    height: 400px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+}
