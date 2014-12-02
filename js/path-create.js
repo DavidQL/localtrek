@@ -64,7 +64,10 @@ $(document).ready(function(){
           S: guid()
         },
         data: {
-          S: JSON.stringify(drawnItems.toGeoJSON())
+          S: JSON.stringify(drawnItems.toGeoJSON()),
+        },
+        title: {
+          S: prompt("Enter the title of your PerfectPath")
         }
       }
     }, function(err, data) {

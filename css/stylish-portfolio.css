@@ -327,14 +327,20 @@ footer {
     padding: 100px 0;
 }
 
+.try-it > section {
+    width:50%;
+    height:400px;
+    margin:20px auto;
+    display:block;
+    float:left;
+}
 .try-it h2 {
     text-align: center;
 }
 
 .try-it iframe {
-    width: 50%;
-    height: 400px;
-    margin: 20px auto;
-    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     border: none;
 }
