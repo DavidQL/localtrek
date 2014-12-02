@@ -1,3 +1,25 @@
+var db = {
+  init: function(callback) {
+    AWS.config.update({accessKeyId: 'AKIAIPCCCSQMN5WXBBSA', secretAccessKey: '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', region: 'us-west-2'});
+    db.instance = new AWS.DynamoDB();
+  },
+  getPaths: function() {
+
+  }
+}
+
+var guid = (function() {
+  function s4() {
+    return Math.floor((1 + Math.random()) * 0x10000)
+               .toString(16)
+               .substring(1);
+  }
+  return function() {
+    return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+           s4() + '-' + s4() + s4() + s4();
+  };
+})();
+
 $(document).ready(function(){
 
   // Set up the basic map
@@ -35,7 +57,20 @@ $(document).ready(function(){
   });
 
   $('#save').click(function(){
-    alert(JSON.stringify(drawnItems.toGeoJSON()));
+    db.instance.putItem({
+      'TableName': 'PerfectPath',
+      'Item': {
+        id: {
+          S: guid()
+        },
+        data: {
+          S: JSON.stringify(drawnItems.toGeoJSON())
+        }
+      }
+    }, function(err, data) {
+      console.log(err, data);
+    })
   });
 
+  db.init();
 });
