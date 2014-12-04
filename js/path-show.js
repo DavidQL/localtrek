@@ -46,7 +46,7 @@ var guid = (function() {
 $(document).ready(function(){
 
   // Set up the basic map
-  var map = L.map('map').setView([40.014986, -105.270546], 13);
+  var map = L.map('map').setView([40.014986, -105.270546], 8);
 
   L.tileLayer('http://{s}.tiles.mapbox.com/v3/oddityoverseer13.kalffo8a/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
