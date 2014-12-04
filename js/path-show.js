@@ -62,7 +62,9 @@ $(document).ready(function(){
 
     // Add the path to the map
 
-    L.geoJson(json).addTo(map);
+    var layer = L.geoJson(json);
+    layer.addTo(map);
+    map.fitBounds(layer.getBounds());
 
   })
 });
