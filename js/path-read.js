@@ -13,11 +13,15 @@ var db = {
         console.log('error', err);
         return;
       }
+      var root = "";
+      if (window.location.href.indexOf('github') >= 0) {
+        root = "/localtrek"
+      }
       data.Items.forEach(function(item) {
         if (item.title) {
           $('<li/>')
           .append($('<a/>', {
-            href: '/path-show.html?id=' + item.id.S,
+            href: root + '/path-show.html?id=' + item.id.S,
             text: item.title.S
           }))
           .appendTo('ul.path-list');
