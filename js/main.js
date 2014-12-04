@@ -20,6 +20,7 @@ $(function() {
     });
   });
   if (window.location.href.indexOf('github') >= 0) {
-    $('.try-it iframe').attr('src', '/localtrek/path-create.html');
+    $('.try-it iframe').first().attr('src', '/localtrek/path-create.html');
+    $('.try-it iframe').last().attr('src', '/localtrek/path-read.html');
   }
 });

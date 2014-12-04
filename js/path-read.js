@@ -17,7 +17,7 @@ var db = {
         if (item.title) {
           $('<li/>')
           .append($('<a/>', {
-            href: '/path-show?id=' + item.id.S,
+            href: '/path-show.html?id=' + item.id.S,
             text: item.title.S
           }))
           .appendTo('ul.path-list');
