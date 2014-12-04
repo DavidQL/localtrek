@@ -1,7 +1,14 @@
-h3 {
-  text-align:center;
-  font-family:sans-serif;
+button#save {
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 1;
 }
+
+html, body { margin: 0; padding: 0; }
+#map { width: 100%; height: 80%; }
 
 ul {
   text-align: center;

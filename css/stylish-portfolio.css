@@ -334,8 +334,9 @@ footer {
     display:block;
     float:left;
 }
-.try-it h2 {
+.try-it h3 {
     text-align: center;
+    margin-bottom:10px;
 }
 
 .try-it iframe {
