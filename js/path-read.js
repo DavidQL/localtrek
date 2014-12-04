@@ -14,14 +14,14 @@ var db = {
         return;
       }
       var root = "";
-      if (window.location.href.indexOf('github') >= 0) {
+      if (window.location.href.indexOf('localtrek') >= 0) {
         root = "/localtrek"
       }
       data.Items.forEach(function(item) {
         if (item.title) {
           $('<li/>')
           .append($('<a/>', {
-            href: '/localtrek/path-show.html?id=' + item.id.S,
+            href: root + '/path-show.html?id=' + item.id.S,
             text: item.title.S
           }))
           .appendTo('ul.path-list');
