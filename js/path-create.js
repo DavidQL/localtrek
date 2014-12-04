@@ -57,11 +57,12 @@ $(document).ready(function(){
   });
 
   $('#save').click(function(){
+    var id = guid();
     db.instance.putItem({
       'TableName': 'PerfectPath',
       'Item': {
         id: {
-          S: guid()
+          S: id
         },
         data: {
           S: JSON.stringify(drawnItems.toGeoJSON()),
@@ -72,6 +73,7 @@ $(document).ready(function(){
       }
     }, function(err, data) {
       console.log(err, data);
+      alert("Your PerfectPath is live at: http://davidql.github.io/localtrek/path-show.html?id=" + id);
     })
   });
 
