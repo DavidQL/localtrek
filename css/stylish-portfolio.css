@@ -328,11 +328,12 @@ footer {
 }
 
 .try-it > section {
-    width:50%;
+    width:48%;
     height:400px;
     margin:20px auto;
     display:block;
     float:left;
+    border-right:30px solid white;
 }
 .try-it h3 {
     text-align: center;
@@ -341,7 +342,7 @@ footer {
 
 .try-it iframe {
     width: 100%;
-    height: 100%;
+    height: 80%;
     margin: 0;
     border: none;
 }
